@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!-- creating layer-list with empty item leads to ignore default black splash -->
+	<!-- it is a must to handle default blach splash configuration from 
+		- AndroidManifest.xml @ <activity ...> line by adding (android:theme="@style/AppTheme")
+		- res/values/theme.xml e this content
+		{
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+</resources>
+		}
+	-->
+    </item>
+</layer-list>
