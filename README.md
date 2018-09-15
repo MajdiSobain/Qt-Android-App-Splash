@@ -18,6 +18,15 @@ This repo contains some files prepared to hide two stage (Black and White) defau
         Note: Be careful in case you have made some changes to "AndroidManifest.xml" file because 
         it will be overwritten.
 
+      ** In case you have made some changes to the "AndroidManifest.xml" and don't want to lose them just DO THIS:
+   
+        1- Under ((<!-- Splash screen -->)) line you need to uncomment ((<!-- meta-data 
+        android:name="android.app.splash_screen_drawable" android:resource="@drawable/logo"/ -->)) line.
+    
+        2- Inside ((<activity android:configChanges= ......>)) line add ((android:theme="@style/AppTheme")).
+        
+       So that there's no need to overwrite "AndroidManifest.xml" file.
+
 - Change the splash pictures in the "drawable-xdpi" folders in the "res" folder to what ever you want, take care of the resolution for each one and their filenames should as same as they are.
 
         Note: hdpi folder for high resolution devices, mdpi for intermediate and ldpi for low ones.
